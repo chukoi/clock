@@ -1,0 +1,72 @@
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clock {
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  border: 2px solid salmon;
+}
+
+.hour-hand {
+  height: 5px;
+  width: 5px;
+  position: absolute;
+  background-color: aliceblue;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  &:after {
+    height: 175px;
+    width: 5px;
+    content: '';
+    background-color: aliceblue;
+    position:absolute;
+    bottom: 0;
+  }
+}
+
+.minute-hand {
+  height: 5px;
+  width: 5px;
+  position: absolute;
+  background-color: aliceblue;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  &:after {
+    height: 150px;
+    width: 3px;
+    content: '';
+    background-color: goldenrod;
+    position:absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.second-hand {
+  height: 5px;
+  width: 5px;
+  position: absolute;
+  background-color: aliceblue;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  &:after {
+    height: 100px;
+    width: 1px;
+    content: '';
+    background-color: purple;
+    position:absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
